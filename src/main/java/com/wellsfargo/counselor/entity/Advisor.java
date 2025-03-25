@@ -5,6 +5,7 @@ import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
+import java.lang.*;
 
 @Entity
 public class Advisor {
@@ -41,7 +42,7 @@ public class Advisor {
     }
 
     public Long getAdvisorId() {
-        return advisorId;
+        return (Long) advisorId;
     }
 
     public String getFirstName() {
